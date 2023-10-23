@@ -1,0 +1,11 @@
+{
+  "name": "congressle",
+  "version": "1.0.0",
+  "description": "Wordle-style game for US Congress members",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rachael Otto",
+  "license": "UNLICENSED"
+}
