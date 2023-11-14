@@ -1,9 +1,0 @@
-{
-  "terminal.integrated.automationProfile.osx": {
-    
-
-  },
-  "terminal.integrated.commandsToSkipShell": [
-    "terminal.integrated.shell.osx"
-  ]
-}
