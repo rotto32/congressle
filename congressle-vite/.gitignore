@@ -27,4 +27,4 @@ dist-ssr
 .env.*
 
 #Hide data
-data/*
+src/data/*
