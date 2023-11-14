@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { APP_TITLE, WELCOME_MSG } from './constants/lang'
 import congressData from './data/2023congress.json'
 import { Member } from './components/member';
+import { Position } from './components/position';
+import { getRandomMemberData } from './helpers/dailyMember';
 
 function App() {
   // const [count, setCount] = useState(0)
-  const testdata = congressData.pop();
-  const [currentMember, setMember] = useState(testdata);
+  const todaysMember = getRandomMemberData(congressData);
+  const [currentMember, setMember] = useState(todaysMember);
 
   return (
     <>
@@ -15,6 +17,8 @@ function App() {
         <p>{WELCOME_MSG}</p>
         <div>
           <Member memberData={currentMember} />
+
+          <Position memberData={currentMember} />
           
         </div>
       </div>
